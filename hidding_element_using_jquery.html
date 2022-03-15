@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+<script>
+    $(document).ready(function(){ //it will only run once the page DOM is ready for JS code yo execute
+        $("button").click(function fun1() { // on button click it will run this function
+           // alert('Data will be cleared')
+            var result=confirm("Are you sure")
+
+            if(result){
+                $('p').hide(); // it will hide p tag
+            }
+            else{
+                exit();
+            }
+            
+        });
+    });
+</script>
+</head>
+<body>
+  //List of elements
+    <p>Grapes</p>
+    <p>Apple</p>
+    <p>Orange</p>
+    <p>Mango</p>
+    <p>Banana</p>
+    <button>CLICK</button>
+</body>
+</html>
+
